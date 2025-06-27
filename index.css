@@ -1,0 +1,102 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: #f7f9fb;
+    display: flex;
+    height: 100vh;
+  }
+  
+  .app {
+    display: flex;
+    width: 100%;
+  }
+  
+  .sidebar {
+    width: 240px;
+    background: #1e1e2f;
+    color: white;
+    padding: 20px;
+  }
+  
+  .sidebar h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .sidebar li {
+    padding: 8px 0;
+    font-size: 14px;
+    opacity: 0.7;
+  }
+  
+  .sidebar li.active {
+    font-weight: bold;
+    opacity: 1;
+  }
+  
+  .main {
+    flex: 1;
+    padding: 40px;
+    background: white;
+  }
+  
+  .quiz-header h3 {
+    margin: 0 0 10px;
+  }
+  
+  .quiz-header p {
+    font-size: 18px;
+    min-height: 60px;
+  }
+  
+  .options {
+    margin-top: 20px;
+    display: grid;
+    gap: 15px;
+  }
+  
+  .options label {
+    background: #f0f0f0;
+    padding: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: 0.3s ease;
+    display: block;
+  }
+  
+  .options input[type="radio"] {
+    display: none;
+  }
+  
+  .options input[type="radio"]:checked + label {
+    border-color: #007bff;
+    background: #e6f0ff;
+  }
+  
+  .feedback {
+    margin-top: 15px;
+    min-height: 24px;
+    font-weight: bold;
+  }
+  
+  button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  button:disabled {
+    background: #999;
+  }
+  

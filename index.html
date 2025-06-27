@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Quiz App</title>
+  <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <h2>Quiz Progress</h2>
+      <ul id="progress-list"></ul>
+    </aside>
+    <main class="main">
+      <div class="quiz-header">
+        <h3 id="question-number">Question</h3>
+        <p id="question">Loading question...</p>
+      </div>
+      <form id="answers" class="options"></form>
+      <div id="feedback" class="feedback"></div>
+      <button id="next-btn" disabled>Next</button>
+      <div id="score-container"></div>
+    </main>
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>
